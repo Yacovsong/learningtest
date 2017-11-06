@@ -1,0 +1,26 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+}
+
+/*公共样式*/
+/*banner start*/
+.banner{
+    height: 120px;
+    background: url("../img/banner.jpg") no-repeat 50% 50%;
+}
+.banner a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
