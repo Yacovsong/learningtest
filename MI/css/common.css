@@ -24,3 +24,27 @@ img{
     height: 100%;
     width: 100%;
 }
+.wrapper{
+    width: 1226px;
+    margin: 0 auto;
+}
+/*banner end*/
+/*nav start*/
+.main-menu{
+    position: relative;
+    height: 40px;
+    color: #b0b0b0;
+    background: #333;
+}
+.nav{
+    position: relative;
+    height: 40px;
+    background: #333;
+}
+.nav a{
+    color: #b0b0b0;
+}
+.sep{
+    float: left;
+    margin: 0 25cm;
+}
