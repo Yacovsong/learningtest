@@ -25,7 +25,6 @@ img{
     width: 100%;
 }
 .wrapper{
-    width: 1226px;
     margin: 0 auto;
 }
 /*banner end*/
@@ -62,24 +61,30 @@ img{
     font-size: 12px;
     line-height: 40px;
 }
-.nav a:hover{
+.nav a:hover,.info a:hover{
     color: #ffffff;
 }
-.sep{
+.nav .sep,.info .sep{
     margin: 6px;
     color: #424242;
 }
 .trigger{
-    float: right;
-}
-.trigger a{
-    font-size: 12px;
-    line-height: 40px;
+    width: 120px;
+    margin-left: 15px;
 }
 .info{
-    float: right;
+    line-height: 40px;
 }
-.info a{
+.info, .trigger {
+    overflow: hidden;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    display: inline;
+}
+.trigger a, .info a{
+    color: #b0b0b0;
     font-size: 12px;
     line-height: 40px;
 }
