@@ -76,7 +76,7 @@ img{
     line-height: 40px;
 }
 .info, .trigger {
-    overflow: hidden;
+
     position: relative;
     height: 40px;
     line-height: 40px;
@@ -88,3 +88,30 @@ img{
     font-size: 12px;
     line-height: 40px;
 }
+.trigger a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #b0b0b0;
+    background: #424242;
+}
+.trigger a:hover{
+    background: #ffffff;
+    color: #ff6700;
+}
+.cart-box{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 316px;
+    height: 85px;
+    padding: 15px 0 0;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+.mini-num{
+    margin-left: -4px;
+}
+/*nav end*/
