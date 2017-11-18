@@ -39,7 +39,6 @@ img{
 }
 .container {
     width: 1226px;
-    height: 40px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -115,3 +114,22 @@ img{
     margin-left: -4px;
 }
 /*nav end*/
+/*header start*/
+.header-logo{
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-top: 22px;
+    overflow: hidden;
+    float: left;
+    background: url("../img/mi-logo.png") no-repeat 50% 50% #ff6700;
+}
+.header .container{
+    position: relative;
+}
+.header-nav .nav-list{
+    float: left;padding: 12px 0 0 30px;
+}
+.nav-list .nav-item{
+    float: left;    
+}
