@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //为了判断用户输入的成绩的范围,我们使用了多重嵌套的if .. else语句
+    var num = window.prompt("请输入XXX的成绩!","");
+    num1 = num*1;//window.prompt方法始终只返回字符串,用这样的方法将其转换成数字
+
+    if (num1==0){
+        num1=parseInt(num);
+    }
+
+    if (isNaN(num1)) {
+        alert("您输入的不是一个数字!");
+    } else if (num1<=100 && num1>=90) {
+        alert("Excellent!");
+    } else if (num1 <90 && num1>=80) {
+        alert("Good!");
+    } else if (num1 < 80 && num1 >= 70) {
+        alert("So so!");
+    } else if (num1 < 70 && num1 >=60) {
+        alert("Be careful !!!");
+    } else if (num1 < 60 && num1 >= 0) {
+        alert("Oh, NO!");
+    } else {
+        alert("USB!");
+    }
+</script>
+</body>
+</html>
