@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        #rm{
+            width: 150px;
+            border: 1px solid #eeeeee;
+            border-radius: 5px;
+            padding: 5px 0;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #rm li{
+            height: 24px;
+            line-height:24px;
+            text-align: center;
+            color: #555;
+            font-style: 12px;
+        }
+        #rm li:hover{
+            background: lightskyblue;;
+        }
+    </style>
+</head>
+<body>
+<ul id="rm">
+    <li>设为代办</li>
+    <li>设为已读</li>
+    <li>置顶邮件</li>
+    <li>添加备注</li>
+    <li>删除</li>
+</ul>
+
+<script>
+    var oRm = document.getElementById('rm');
+    var aLi = document.getElementsByTagName('li');
+    document.oncontextmenu = function (e) {
+        e = e || window.event;//标准||ie
+        oRm.style.display = 'block';
+        oRm.style.left = e.clientX + 'px';
+        oRm.style.top = e.clientY + 'px ';
+
+        return false;//阻止默认行为
+    };
+    document.onclick = function () {
+        oRm.style.display = 'none';
+    };
+    for(var i=0; i<aLi.length;i++){
+        aLi[i].onclick = function(){
+            //点击后才执行
+            //this //返回当前对象的引用
+            console.log(this.innerHTML);
+        };
+    }
+</script>
+</body>
+</html>

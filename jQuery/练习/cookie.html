@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="../jquery-1.12.4.js"></script>
+<script>
+    function setCookie(key, value, expires) {
+        var str = key + "=" + value + ';';
+        if (expires) {
+            var date = new Date();
+            date.setDate(date.getDate() + expires);
+            str += 'expires=' + date;
+        }
+        document.cookie = str;
+    }
+    setCookie('skin','skin1',30);
+</script>
+</body>
+</html>
