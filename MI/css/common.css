@@ -115,6 +115,10 @@ img{
 }
 /*nav end*/
 /*header start*/
+.header{
+    position: relative;
+    height: 100px;
+}
 .header-logo{
     display: block;
     width: 55px;
@@ -127,9 +131,48 @@ img{
 .header .container{
     position: relative;
 }
-.header-nav .nav-list{
-    float: left;padding: 12px 0 0 30px;
+.header .header-nav{
+    float: left;
+    width: 850px;
 }
-.nav-list .nav-item{
+.header .nav-list{
+    position: relative;
+    float: left;
+    padding: 12px 0 0 30px;
+    width: 820px;
+    height: 88px;
+    margin: 0;
+}
+.header .nav-category{
+    position: relative;
+    float: left;
+    width: 127px;
+    padding-right: 15px;
+    height: 88px;
+}
+.header .nav-item{
     float: left;    
+}
+.header .nav-item a{
+    display: block;
+    color: #333333;
+    padding:26px 10px 38px;
+}
+.header .nav-item a:hover{
+    color: #ff6700;
+}
+.header .sub-menu{
+    height: 229px;
+    border-top: 1px solid #e0e0e0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+.header .sub-menu .children-list li{
+    float: left;
+    width: 180px;
+    padding: 35px 12px 0;
+    text-align: center;
+    position: relative;
 }
