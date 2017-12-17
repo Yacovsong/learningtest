@@ -110,6 +110,10 @@ img{
     background: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
+.trigger:hover .cart-box{
+    display: block;
+    animation:show 0.5s ease-in forwards;
+}
 .mini-num{
     margin-left: -4px;
 }
@@ -153,6 +157,9 @@ img{
 .header .nav-item{
     float: left;    
 }
+.header .nav-item:hover .sub-menu{
+    display: block;
+}
 .header .nav-item a{
     display: block;
     color: #333333;
@@ -161,13 +168,21 @@ img{
 .header .nav-item a:hover{
     color: #ff6700;
 }
-.header .sub-menu{
+.sub-menu{
     height: 229px;
     border-top: 1px solid #e0e0e0;
     width: 100%;
     position: absolute;
     left: 0;
     top: 100px;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15);
+    display: none;
+}
+.header .sub-menu .children-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 12px;
 }
 .header .sub-menu .children-list li{
     float: left;
@@ -175,4 +190,89 @@ img{
     padding: 35px 12px 0;
     text-align: center;
     position: relative;
+}
+.header .sub-menu .flags{
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+.header .sub-menu .flag{
+    display: inline-block;
+    height: 18px;
+    padding: 1px 20px;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+}
+.header .sub-menu .figure-thumb{
+    width: 160px;
+    height: 110px;
+    margin: 0 auto 16px;
+    text-align: center;
+}
+.header .sub-menu .figure-thumb img{
+    width: 160px;
+    height: 110px;
+}
+.header .sub-menu .title{
+    margin: 0;
+    line-height: 20px;
+    color: #333333;
+}
+.header .sub-menu .title a{
+    color: #333333;
+}
+.header .sub-menu .price{
+    margin: 0;
+    line-height: 12px;
+    color: #ff6700;
+}
+.p-line{
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    background: #e0e0e0;
+}
+.header .header-search{
+    float: right;
+    width: 296px;
+    margin-top: 25px;
+    height: 50px;
+    position: relative;
+}
+.header .search-text{
+    position: absolute;
+    width: 245px;
+    height: 50px;
+    top: 0;
+    right: 51px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 48px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+}
+.header .search-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 50px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    font-size: 24px;
+    line-height: 24px;
+    background: #fff;
+    color: #616161;
+    outline: none;
+    cursor: pointer;
+}
+.icon-btnsearch{
+    position: absolute;
+    right: 50px;
+    top: 0;
 }
