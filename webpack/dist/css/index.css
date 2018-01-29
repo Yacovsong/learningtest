@@ -1,0 +1,9 @@
+/*! syc */
+body {
+  background-image: url(http://localhost:8082/images/a561dc35580df3fc30242502235e8e7b.png);
+}
+
+.img {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
