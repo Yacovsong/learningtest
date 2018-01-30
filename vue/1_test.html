@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!--{{msg}}-->
+        <div v-text="msg"></div>
+        <div v-html="msg"></div>
+        <!--v-text会将元素当成纯文本输出，v-html会将元素当成HTML标签解析后输出-->
+        <input type="text" v-model="a"><!--v-model双向绑定数据-->
+        {{a}}
+    </div>
+    <div id="app2">
+    </div>
+    <script src="vue.js"></script>
+
+    <script>
+        var vm = new Vue({
+            el:'#app',//el 作用域
+            data:{
+                msg:'hello world',
+                a:'ddd'
+            }
+        })
+    </script>
+</body>
+</html>

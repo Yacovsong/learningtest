@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>.</title>
+</head>
+<body>
+    <div id="div1">
+        <input type="text" id="ipt1">
+    </div>
+    <script>
+
+        obj = {
+            msg :'aa'
+        };
+        Object.defineProperty(obj,"msg",{
+            set:function (val) {
+                //console.log(val);
+                document.getElementById('div1').innerHTML = val;
+            }
+        });
+        //obj.msg = 'hhhhh'
+        var oIpt = document.getElementById('ipt1');
+        oIpt.onkeyup = function () {
+            //console.log(this.value)
+            obj.msg = this.value;
+        };
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ss</title>
+</head>
+<body>
+    <div id="app">
+        <div v-on click="fn">sdf</div>
+        <div @click="fn('div111',$event)">sdfsdf</div>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+
+            },
+            methods:{//函数写在这里
+                fn:function (x,e) {
+                    console.log(x,e);
+                    console.log(event.target);
+                }
+            }
+        })
+    </script>
+</body>
+</html>

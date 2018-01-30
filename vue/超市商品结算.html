@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>s1</title>
+    <style>
+        li{
+            width: 500px;
+            height: 80px;
+            margin-bottom: 10px;
+            background: #5eff1f;
+        }
+        li span{
+            float: right;
+        }
+        .bg{
+            background: #ff475a;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>services</h1>
+        <ul>
+            <li v-for="obj in arr" @click="fn(obj)" :class="{bg:obj.isBg}">{{obj.name}}<span>{{obj.price}}</li>
+        </ul>
+        <hr/>
+        <span>total</span>
+        <span>{{num}}</span>
+    </div>
+
+    <script src="vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                arr:[
+                    {name:'aa',price:561,isBg:false},
+                    {name:'bb',price:121,isBg:false},
+                    {name:'cc',price:534,isBg:false},
+                    {name:'dd',price:976,isBg:false},
+                    {name:'ee',price:385,isBg:false}
+                ],
+                num:0
+            },
+            methods:{
+                fn:function (o) {
+                    o.isBg = !o.isBg;
+                        if(o.isBg){
+                            this.num += o.price;
+                        }else{
+                            this.num -= o.price;
+                        }
+                }
+            }
+        })
+    </script>
+</body>
+</html>
