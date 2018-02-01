@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>s1</title>
+</head>
+<body>
+    <div id="app">
+        <demo title="111" content="111"></demo>
+        <demo title="222" content="222"></demo>
+    </div>
+    <script src="vue.js"></script>
+    <!--传参-->
+    <script type="text/x-template" id="temp">
+        <div>
+            <h1>{{title}}</h1>
+            <p>{{content}}</p>
+        </div>
+</script>
+    <script>
+        //根元素只能有一个 全局组件
+//        Vue.component('demo',{
+//            template:'<h1>aaaaa</h1>'
+//        });
+        var vm = new Vue({
+            el:'#app',
+            data:{
+
+            },
+            //局部组件
+//            components:{
+//                demo:{
+//                    template:'<div><h1>{{title}}</h1><p>{{content}}</p></div>',
+//                    props:['title','content']
+//                }components:{
+            //传参
+            components: {
+                demo: {
+                    template: '#temp',
+                    props: ['title', 'content']
+                }
+            }
+        });
+
+
+    </script>
+</body>
+</html>
