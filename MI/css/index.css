@@ -1,0 +1,17 @@
+/*轮播图开始*/
+
+.ui-wrapper{
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.ui-viewport{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 460px;
+    webkit-transform: translatez(0);
+    -ms-transform: translatez(0);
+    transform: translatez(0);
+}
