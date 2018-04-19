@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    const g = {b:3};
+//    console.log(g.b);
+//    const g.b = 12;
+//    console.log(g.b)
+
+
+//    var foo = {n:1};
+//    (function (foo) {
+//        console.log(foo.n);
+//        foo.n = 3;
+//        var foo = {n:2};
+//        console.log(foo.n);
+//    })(foo);
+//    console.log(foo.n)
+
+function f() {
+    return 1;
+};
+alert(f());
+var f = new Function('return 2');
+alert(f());
+var f = function () {
+    return 3;
+};
+alert(f());
+function f() {
+    return 4;
+};
+alert(f());
+var f = new Function('return 5');
+alert(f());
+var f = function () {
+    return 6;
+};
+alert(f());
+</script>
+</body>
+</html>
